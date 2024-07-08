@@ -1,0 +1,14 @@
+@import "/styles/mixins.scss";
+@import "/styles/variabals.scss";
+
+.header {
+  padding: convertPX(20) convertPX(120);
+  border-bottom: 1px solid $text-logo;
+  font-size: convertPX(24);
+}
+
+.logo {
+  color: $text-logo;
+  width: text-content;
+  display: inline-block;
+}

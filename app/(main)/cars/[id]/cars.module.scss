@@ -1,0 +1,36 @@
+@import "/styles/mixins.scss";
+@import "/styles/variabals.scss";
+
+.wrapper {
+  margin-top: convertPX(130);
+  color: black;
+  display: flex;
+  gap: convertPX(40);
+  position: relative;
+}
+
+.image {
+  width: 50%;
+  height: convertPX(250);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: convertPX(15);
+
+  h1 {
+    font-size: convertPX(30);
+  }
+
+  p {
+    font-size: convertPX(16);
+  }
+}
+
+.button_back {
+  position: absolute;
+  bottom: convertPX(20);
+  left: convertPX(20);
+}

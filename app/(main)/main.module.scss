@@ -1,0 +1,25 @@
+@import "/styles/mixins.scss";
+@import "/styles/variabals.scss";
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #7382ad;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: convertPX(60);
+  margin-top: convertPX(130);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: convertPX(50);
+}

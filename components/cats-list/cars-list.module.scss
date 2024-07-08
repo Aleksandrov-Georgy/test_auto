@@ -1,0 +1,53 @@
+@import "/styles/mixins.scss";
+@import "/styles/variabals.scss";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: convertPX(10);
+  grid-row-gap: convertPX(10);
+  margin-bottom: convertPX(50);
+  justify-items: center;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid $border-color;
+  border-radius: convertPX(10);
+  width: convertPX(250);
+  height: convertPX(250);
+  padding: convertPX(10);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  img {
+    border-radius: convertPX(10);
+  }
+}
+
+.content {
+  margin-top: convertPX(5);
+  line-height: convertPX(20);
+
+  h3 {
+    font-size: convertPX(18);
+    text-align: center;
+    margin-bottom: convertPX(5);
+  }
+
+  p {
+    font-size: convertPX(12);
+    color: $description;
+  }
+}
+
+.no_data {
+  text-align: center;
+}

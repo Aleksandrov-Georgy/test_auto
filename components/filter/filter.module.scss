@@ -1,0 +1,13 @@
+@import "/styles/mixins.scss";
+@import "/styles/variabals.scss";
+
+.filters {
+  width: 100%;
+  display: flex;
+  gap: convertPX(20);
+  font-size: convertPX(18);
+}
+
+.select {
+  width: 100%;
+}
